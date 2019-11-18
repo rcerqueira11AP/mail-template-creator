@@ -2,6 +2,23 @@
 <style>
   .greyBlock {
     background-color: #e5e5e5;
+    border-radius: 5px;
+    padding: 5px;
+    font-weight: bold;
+    margin-top: 37px;
+    font-size: 18px;
+    margin-bottom: 9px;
+  }
+
+  .no-break-text{
+    overflow: hidden;
+    white-space: nowrap;
+  }
+
+  .block-numero-boletas{
+    text-align: center;
+    border: 2px solid #e5e5e5;
+    border-radius: 5px;
   }
 
   .btnLink {
@@ -18,6 +35,7 @@
     height: 66px;
     position: relative;
   }
+
 
   .vertical-center {
     margin: 0;
@@ -372,6 +390,22 @@
     font-size: 18px;
     font-weight: bold;
   }
+
+  .total-panel-footer{
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 16px;
+    margin-top: -14px;
+  }
+
+  h1{
+    font-size: 30px !important;
+  }
+
+  h2{
+    font-size: 18px !important;
+  }
+
 </style>
 <html class="no-js" lang="">
 
@@ -427,7 +461,7 @@
           </div>
         </div>
 
-        <div class="center">
+        <div class="total-panel-footer">
           <b>Fecha de vencimiento </b> 05 de Mayo de 2018
         </div>
 
@@ -437,18 +471,26 @@
         </div>
         <div class="row">
           <div class="col-xs-4">
-            Nro de Copropietario
+            <div class="no-break-text">
+              &nbsp; Nº de Copropietario
+            </div>
           </div>
-          <div class="col-xs-8" style="border: #e5e5e5;">
-            342342342342
+          <div class="col-xs-8">
+            <div class="block-numero-boletas">
+              342342342342
+            </div>
           </div>
         </div>
-        <div class="row">
+        <div class="row" style="margin-top: 4px !important;">
           <div class="col-xs-4">
-            Nro de Boleta
+            <div class="no-break-text">
+              &nbsp; Nº de Boleta
+            </div>
           </div>
-          <div class="col-xs-8" style="border: #e5e5e5;">
-            1231-12312-123123-123
+          <div class="col-xs-8">
+            <div class="block-numero-boletas">
+              1231-12312-123123-123
+            </div>
           </div>
         </div>
       </h4>
