@@ -10,9 +10,36 @@
     margin-bottom: 9px;
   }
 
+  .greenCommunityLink{
+    color: #66cc33;
+    font-weight: bold;
+    text-decoration: none;
+  }
+
+  .greenCommunityLink:hover{
+    text-decoration: none;
+    color: #66cc33;
+  }
+
+  .footText{
+    font-size: 14x;
+  }
+
+  .panel-style{
+    padding-top: 15px !important;
+    padding-bottom: 0 !important;
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+  }
+
   .no-break-text{
     overflow: hidden;
     white-space: nowrap;
+  }
+
+  .black-line{
+    border-bottom: 1.5px solid #484848;
+    margin-bottom: 23px;
   }
 
   .block-numero-boletas{
@@ -52,6 +79,9 @@
     font-weight: bold !important;
   }
 
+  .principalBtnStyle:hover{
+    text-decoration: none;
+  }
   .green-amount {
     color: #66cc33;
     font-weight: bold;
@@ -98,6 +128,18 @@
 
   .block {
     display: block;
+  }
+
+  .logInBtn{
+    border: 2px solid #6F6F6F;
+    text-decoration: none;
+    color: #6F6F6F;
+  }
+
+  .logInBtn:hover{
+    border: 2px solid #6F6F6F;
+    text-decoration: none;
+    color: #6F6F6F;
   }
 
   .row {
@@ -517,35 +559,37 @@
         </div>
       </div>
 
-      <div class="panel">
+      <div class="panel panel-style">
         <div class="panel-header">
           <img src="media/comunidad-feliz-logo.png" width="150px" alt="">
         </div>
         <div class="panel-body">
           <div class="row">
             <div class="col-xs-6">
-              <b>¡Hemos digitalizado tu comunidad!</b>
-              <p><b>Revisa el detalle de tu boleta, reserva espacios comunes y mas</b></p>
-              <a href="" class="buttonCustom"> Iniciar sesión.</a>
+              <b style="font-size: 16;">¡Hemos digitalizado tu comunidad!</b>
+              <p style="font-size: 14;"><b>Revisa el detalle de tu boleta</b>, reserva espacios comunes y mas</p>
+              <a href="" class="buttonCustom logInBtn block"> Iniciar sesión.</a>
 
             </div>
             <div class="col-xs-6">
-              <img src="media/lay-down-boi.png" alt="">
+              <img src="media/lay-down-boi.svg">
 
             </div>
           </div>
         </div>
       </div>
+      <div class="black-line"></div>
+
+      <div class="footText">
+        Enviado desde <a href="www.comunidadfeliz.cl" class="greenCommunityLink">ComunidadFeliz.cl</a>
+        <br class="small-line-space">
+        Avenida libertador bernardo o'higgins 949, piso 21, Santiago, Chile
+      </div>
     </div>
   </div>
 
 
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-  <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
 
-  <script src="js/vendor/bootstrap.min.js"></script>
-
-  <script src="js/main.js"></script>
 </body>
 
 </html>
