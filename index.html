@@ -10,6 +10,14 @@
     margin-bottom: 9px;
   }
 
+  .bold{
+    font-weight: bold !important;
+  }
+
+  .topInfoStyle{
+
+  }
+
   .greenCommunityLink {
     color: #66cc33;
     font-weight: bold;
@@ -26,8 +34,9 @@
     color: #66cc33;
   }
 
-  .footText {
+  .footStyle {
     font-size: 14x;
+    margin-bottom: 20px;
   }
 
   .panel-style {
@@ -83,13 +92,7 @@
     position: relative;
   }
 
-  .vertical-small-center {
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
-  }
+
 
   .principalBtnStyle {
     background-color: #66cc33;
@@ -441,8 +444,8 @@
   }
 
   .dot {
-    height: 33px;
-    width: 33px;
+    height: 34px;
+    width: 34px;
     background-color: #66cc33;
     border-radius: 50%;
     display: inline-block;
@@ -496,14 +499,16 @@
     <div class="centeredContainer">
 
       <img src="media/comunidad-feliz-logo.png" width="150px" alt="">
-      <h1>Gastos comunes, mes año</h1>
-      <h2>Comunidad nombre</h2>
+      <h1 class="bold">Gastos comunes, mes año</h1>
+      <h2 class="bold">Comunidad nombre - unidad</h2>
       <h4>
-        Estimado -usuario-, -nombre de aministracion- ha emitido tu boleta de gastos comunes del mes de -mes-
+        <b>Estimado -usuario-, -nombre de administración-</b> ha emitido tu boleta de gastos comunes del mes de -mes-
         <br>
-        Los gastos comunes han sido enviados desde <b>Comunidadfeliz.cl</b> el software de administracion de edificios y
-        condominios utilzado en tu comunidad.
-
+        <br>
+        Los gastos comunes han sido enviados desde <b>Comunidadfeliz.cl</b> el software de administración de edificios y
+        condominios utilizado en tu comunidad.
+        <br>
+        <br>
         <div class="panel">
           <div class="panel-body">
             <div class="row">
@@ -637,7 +642,7 @@
       </div>
       <div class="black-line"></div>
 
-      <div class="footText">
+      <div class="footStyle">
         Enviado desde <a href="www.comunidadfeliz.cl" class="greenCommunityLink">ComunidadFeliz.cl</a>
         <br class="small-line-space">
         Avenida libertador bernardo o'higgins 949, piso 21, Santiago, Chile
