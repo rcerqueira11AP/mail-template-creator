@@ -6,13 +6,38 @@
 
   .btnLink {
     text-decoration: none;
-
   }
 
-  .principalBtnColor {
+  .total-to-pay-style {
+    font-size: 30px;
+    color: #6F6F6F;
+  }
+
+
+  .container {
+    height: 66px;
+    position: relative;
+  }
+
+  .vertical-center {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+
+  .principalBtnStyle {
     background-color: #66cc33;
     color: white !important;
+    font-size: 36px !important;
+    font-weight: bold !important;
+  }
 
+  .green-amount {
+    color: #66cc33;
+    font-weight: bold;
+    font-size: 60px;
   }
 
   .centeredBody {
@@ -53,7 +78,7 @@
     border-radius: 4px;
   }
 
-  .buttonCustom .block {
+  .block {
     display: block;
   }
 
@@ -386,7 +411,19 @@
 
         <div class="panel">
           <div class="panel-body">
-            Total a pagar $164.430
+            <div class="row">
+              <div class="col-xs-5">
+                <div class="container">
+                  <div class="total-to-pay-style vertical-center">
+                    Total a pagar
+                  </div>
+                </div>
+              </div>
+              <div class="col-xs-7 green-amount">
+                $164.430
+              </div>
+            </div>
+
           </div>
         </div>
 
@@ -394,7 +431,7 @@
           <b>Fecha de vencimiento </b> 05 de Mayo de 2018
         </div>
 
-        <a href="" class="buttonCustom block principalBtnColor">Pagar aquí</a>
+        <a href="" class="buttonCustom block principalBtnStyle">Pagar aquí</a>
         <div class="greyBlock">
           Datos para tú boleta
         </div>
